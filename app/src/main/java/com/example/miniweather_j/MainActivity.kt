@@ -7,6 +7,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import java.time.LocalTime
 
 class MainActivity : AppCompatActivity() {
 
@@ -33,5 +34,19 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
+        val citySelected = intent.getStringExtra("city")
+        // agregar ene l archivo correspondiente en grettings
+
+        //edit text greeting se le asigna un valor dependiendo de la hora del dia esta en values string
+
+        val time = LocalTime.now().hour
+
+        when(time){
+            // in de 5 am a 11 am = greeting .R.good_morning
+            //in 12 pm - 7 pm  = greeting .R.good_afternoon
+            // in 8pm - 4 om = greeting R.good_evening
+        }
     }
-}
+
+    }

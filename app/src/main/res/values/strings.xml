@@ -1,3 +1,22 @@
 <resources>
     <string name="app_name">Miniweather_J</string>
+    <!--
+     Crear los string values
+     windy
+     stormy
+     rainy
+     cloudy
+     sunny
+     -->
+    <string name="windy">windy</string>
+    <string name="stormy">stormy</string>
+    <string name="rainy">rainy</string>
+    <string name="cloudy">cloudy</string>
+    <string name="sunny">sunny</string>
+
+    <!-- good morning , good_afternoon , good_evening -->
+    <string name="good_morning">¡Buenos días!,</string>
+    <string name="good_afternoon">¡Buenas tardes! </string>
+    <string name="good_evening">¡Buenas noches! </string>
+
 </resources>

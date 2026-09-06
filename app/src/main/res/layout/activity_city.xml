@@ -31,4 +31,21 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginBottom="150dp" />
 
+    <!-- Spinner con id= city_selector
+     layout width 300 dp , layout_height wrap_content,
+     layout margin top = 80dp,
+     constraintEnd to End of = parent,
+     Horizontal_bias = 0.495
+     Constraint start toStartOf = parent,
+     ConstraintBottom_to topOf = parent -->
+    <Spinner
+        android:id="@+id/city_selector"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivLogo"
+        />
 </androidx.constraintlayout.widget.ConstraintLayout>
