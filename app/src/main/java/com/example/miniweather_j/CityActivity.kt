@@ -10,6 +10,7 @@ import android.widget.Spinner
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
+import androidx.core.view.WindowCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.miniweather_j.utilities.WeatherService
 
@@ -23,6 +24,9 @@ class CityActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
+        // Configurar barra de estado para fondo oscuro
+        WindowCompat.getInsetsController(window, window.decorView).isAppearanceLightStatusBars = false
 
         //agregar servicio se pasa el mismo weather context creado como mismo
         val weatherService = WeatherService(this)
